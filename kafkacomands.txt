@@ -1,0 +1,56 @@
+curl -i -X POST -H "Accept:application/json"  -H  "Content-Type:application/json" http://localhost:8083/connectors/ -d '{
+      "name": "aionv4-connector",
+      "config": {
+            "connector.class": "io.debezium.connector.mysql.MySqlConnector",
+            "database.hostname": "localhost",
+            "database.port": "3306",
+            "database.user": "debezium",
+            "database.password": "dbz",
+            "database.server.id": "42",
+            "database.server.name": "aionv4",
+            "database.history.kafka.bootstrap.servers": "localhost:9092",
+            "database.history.kafka.topic": "dbhistory_aionv4" ,
+            "include.schema.changes": "true"
+       }
+    }'
+	
+bin/connect-standalone.sh config/connect-standalone.properties config/block-source.properties
+
+bin/connect-standalone.sh config/connect-standalone.properties config/block-sink.properties
+
+bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic myserver.aionv4.block --from-beginning
+	
+	bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic dbhistory.aion
+
+bin/kafka-console-consumer.sh --zookeeper localhost:2181 --topic aionv4server.aionv4.block --from-beginning
+
+bin/kafka-topics.sh --zookeeper localhost:2181 --delete --topic myserver
+
+sudo systemctl start kafka
+sudo systemctl stop kafka
+
+
+bin/kafka-topics.sh --list --zookeeper localhost:2181
+
+sudo nano config/block-source.properties
+
+sudo nano config/connect-standalone.properties
+	bin/kafka-configs.sh --zookeeper localhost:2181 --entity-type topics --entity-name dbhistory_aionv4 --alter --add-config retention.bytes=-1
+
+/usr/local/spark/spark-2.3.2-bin-hadoop2.7/bin/spark-submit --driver-memory 6g --packages org.apache.spark:spark-streaming-kafka-0-8_2.11:2.3.2 block_kafka_connect_sink.py
+ 
+
+name = aionv4-connector     
+connector.class= io.debezium.connector.mysql.MySqlConnector
+database.hostname= localhost
+database.port= 3306
+database.user= debezium
+database.password= dbz
+database.server.id= 42
+database.server.name= aionv4
+database.whitelist=aionv4
+database.history.kafka.bootstrap.servers= localhost:9092
+database.history.kafka.topic= dbhistory_aionv4 
+include.schema.changes= true
+tasks.max=20
+snapshot.mode=SCHEMA_ONLY_RECOVERY

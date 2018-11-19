@@ -1,0 +1,373 @@
+{
+  "schema": {
+    "type": "struct",
+    "fields": [
+      {
+        "type": "struct",
+        "fields": [
+          {
+            "type": "int64",
+            "optional": false,
+            "field": "block_number"
+          },
+          {
+            "type": "string",
+            "optional": true,
+            "field": "block_hash"
+          },
+          {
+            "type": "string",
+            "optional": true,
+            "field": "miner_address"
+          },
+          {
+            "type": "string",
+            "optional": true,
+            "field": "parent_hash"
+          },
+          {
+            "type": "string",
+            "optional": true,
+            "field": "receipt_tx_root"
+          },
+          {
+            "type": "string",
+            "optional": true,
+            "field": "state_root"
+          },
+          {
+            "type": "string",
+            "optional": true,
+            "field": "tx_trie_root"
+          },
+          {
+            "type": "string",
+            "optional": true,
+            "field": "extra_data"
+          },
+          {
+            "type": "string",
+            "optional": true,
+            "field": "nonce"
+          },
+          {
+            "type": "string",
+            "optional": true,
+            "field": "bloom"
+          },
+          {
+            "type": "string",
+            "optional": true,
+            "field": "solution"
+          },
+          {
+            "type": "string",
+            "optional": true,
+            "field": "difficulty"
+          },
+          {
+            "type": "string",
+            "optional": true,
+            "field": "total_difficulty"
+          },
+          {
+            "type": "int64",
+            "optional": true,
+            "field": "nrg_consumed"
+          },
+          {
+            "type": "int64",
+            "optional": true,
+            "field": "nrg_limit"
+          },
+          {
+            "type": "int64",
+            "optional": true,
+            "field": "size"
+          },
+          {
+            "type": "int64",
+            "optional": true,
+            "field": "block_timestamp"
+          },
+          {
+            "type": "int64",
+            "optional": true,
+            "field": "num_transactions"
+          },
+          {
+            "type": "int64",
+            "optional": true,
+            "field": "block_time"
+          },
+          {
+            "type": "string",
+            "optional": true,
+            "field": "nrg_reward"
+          },
+          {
+            "type": "int64",
+            "optional": true,
+            "field": "transaction_id"
+          },
+          {
+            "type": "string",
+            "optional": true,
+            "field": "transaction_list"
+          }
+        ],
+        "optional": true,
+        "name": "aionv4server.aionv4.block.Value",
+        "field": "before"
+      },
+      {
+        "type": "struct",
+        "fields": [
+          {
+            "type": "int64",
+            "optional": false,
+            "field": "block_number"
+          },
+          {
+            "type": "string",
+            "optional": true,
+            "field": "block_hash"
+          },
+          {
+            "type": "string",
+            "optional": true,
+            "field": "miner_address"
+          },
+          {
+            "type": "string",
+            "optional": true,
+            "field": "parent_hash"
+          },
+          {
+            "type": "string",
+            "optional": true,
+            "field": "receipt_tx_root"
+          },
+          {
+            "type": "string",
+            "optional": true,
+            "field": "state_root"
+          },
+          {
+            "type": "string",
+            "optional": true,
+            "field": "tx_trie_root"
+          },
+          {
+            "type": "string",
+            "optional": true,
+            "field": "extra_data"
+          },
+          {
+            "type": "string",
+            "optional": true,
+            "field": "nonce"
+          },
+          {
+            "type": "string",
+            "optional": true,
+            "field": "bloom"
+          },
+          {
+            "type": "string",
+            "optional": true,
+            "field": "solution"
+          },
+          {
+            "type": "string",
+            "optional": true,
+            "field": "difficulty"
+          },
+          {
+            "type": "string",
+            "optional": true,
+            "field": "total_difficulty"
+          },
+          {
+            "type": "int64",
+            "optional": true,
+            "field": "nrg_consumed"
+          },
+          {
+            "type": "int64",
+            "optional": true,
+            "field": "nrg_limit"
+          },
+          {
+            "type": "int64",
+            "optional": true,
+            "field": "size"
+          },
+          {
+            "type": "int64",
+            "optional": true,
+            "field": "block_timestamp"
+          },
+          {
+            "type": "int64",
+            "optional": true,
+            "field": "num_transactions"
+          },
+          {
+            "type": "int64",
+            "optional": true,
+            "field": "block_time"
+          },
+          {
+            "type": "string",
+            "optional": true,
+            "field": "nrg_reward"
+          },
+          {
+            "type": "int64",
+            "optional": true,
+            "field": "transaction_id"
+          },
+          {
+            "type": "string",
+            "optional": true,
+            "field": "transaction_list"
+          }
+        ],
+        "optional": true,
+        "name": "aionv4server.aionv4.block.Value",
+        "field": "after"
+      },
+      {
+        "type": "struct",
+        "fields": [
+          {
+            "type": "string",
+            "optional": true,
+            "field": "version"
+          },
+          {
+            "type": "string",
+            "optional": false,
+            "field": "name"
+          },
+          {
+            "type": "int64",
+            "optional": false,
+            "field": "server_id"
+          },
+          {
+            "type": "int64",
+            "optional": false,
+            "field": "ts_sec"
+          },
+          {
+            "type": "string",
+            "optional": true,
+            "field": "gtid"
+          },
+          {
+            "type": "string",
+            "optional": false,
+            "field": "file"
+          },
+          {
+            "type": "int64",
+            "optional": false,
+            "field": "pos"
+          },
+          {
+            "type": "int32",
+            "optional": false,
+            "field": "row"
+          },
+          {
+            "type": "boolean",
+            "optional": true,
+            "default": false,
+            "field": "snapshot"
+          },
+          {
+            "type": "int64",
+            "optional": true,
+            "field": "thread"
+          },
+          {
+            "type": "string",
+            "optional": true,
+            "field": "db"
+          },
+          {
+            "type": "string",
+            "optional": true,
+            "field": "table"
+          },
+          {
+            "type": "string",
+            "optional": true,
+            "field": "query"
+          }
+        ],
+        "optional": false,
+        "name": "io.debezium.connector.mysql.Source",
+        "field": "source"
+      },
+      {
+        "type": "string",
+        "optional": false,
+        "field": "op"
+      },
+      {
+        "type": "int64",
+        "optional": true,
+        "field": "ts_ms"
+      }
+    ],
+    "optional": false,
+    "name": "aionv4server.aionv4.block.Envelope"
+  },
+  "payload": {
+    "before": null,
+    "after": {
+      "block_number": 6,
+      "block_hash": "0e96e513aafa5d7cf785a47e68ec7129af987268220bfd276d456d62e65dabeb",
+      "miner_address": "a0518c851697466c45cac097c26ba82f648285483411fe85fd49539e3db3863e",
+      "parent_hash": "b39c7663433ec3d5c72b0bffa64eb1a23bc2cd02db25fd48497e09aeeb4e4017",
+      "receipt_tx_root": "45b0cfc220ceec5b7c1c62c4d4193d38e4eba48e8815729ce75f9c0ab0e4c1c0",
+      "state_root": "8bfa6c9c248e1b732666dea04fbaaf1782d223b0a3a691327ede5bdf10fa09d2",
+      "tx_trie_root": "45b0cfc220ceec5b7c1c62c4d4193d38e4eba48e8815729ce75f9c0ab0e4c1c0",
+      "extra_data": "41494f4e00000000000000000000000000000000000000000000000000000000",
+      "nonce": "b431854800000006350300000000000000000002000000000000000000000000",
+      "bloom": "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "solution": "006396a1e9b3401071500d86f16e47e8392fe36eb6e801a144d4e408fa6d66dc41573931f250cd18557757680e307a0329612f160a6c3f3e2641280634a196fc83d436aaef1d84d7b5212f93098ee22aad7989472b26e22206c37b89cd815eda95d8a514e70877590277ec25c3780d1838cef1f7d067ff88092a11bfbfd9b6151c3c24f2132805f4e7c8bf97b2818c2d4cadeee3b31e82288ed11a4da78da3424524afb00c2f30dfac09e574dfdfd6a006da684f08259f6a71212545bf19e9e859f50eeb57925e1f65fa93e6174f195aaf8898db7edc6f8fb17f1a331e8484c82ad8fc52e40b6e20cf30e35d2483025ac3f72e07628344a3e9f9e9face3b9fcbbee7748676f83b8d101a32f8bab163bbde693b354a4e45b983cd4268b285349ac3d2deac69017b47ac3c35b67120dbdb09bec345127ac9a899e43d079e9c057d156a6ca63829b8273bf71d9787161641ea247dc28446ff717f16448b81ea87bc0098f8292c359c327c4a9f588ae76c9107e6ae6dd9f14b5dde3b2724dce8708473678f566222d96e423a15fa33526e904ba981452b59d29b9a87e5b2eaacd7b4835a52ceaa104ca644b2346e2b706b11ccb8498743372d9f0ceb13112d5c0ba0fb158e5438e249b65a0def3b49d25c2006bdae09c99daae9156459def64c37583fede4660d568e833e115a157aace21483dfb2fb68ce9e2bab162a0b92e44fb530ebe74e4f33955a33ba833cbefbba5105098f0cc3e231444af0fa111a46ed4a4cd5b3f73ad718db8ca52c6808ef3f524438d1828fcfcb67e7798bf00bfbc61d83185ca439aabf4e1c62e078a6e5e160166f2db762bd183343117a39a7365b359dfa94274e9611551244e328b281865f47d76685e6e2b1fe79311cbd59a029f3e55231443ce4524fd16d3e4edd85082c3fbe25d0133391295118b49af7270b2e18df6873c5dc0f3f564716a5fa6b4795a5866c5289196f9eed9fe302dee95f8b00addb0c3039ce2d300f126c678f7747c93450f38ae922fc3d30b16b27dfaed4f1573f6f390c18f77bbc268a27cab927e00b441d2fd9b8b1a1773657ab1f257658a4652cae7cc75717a8e476ee7d316b0dac888b49f310ca070ae5a2c032f2a5f9146421e2855c71fbf3e6bb83cc15101e485a0580a2ab7a57550ea374ed6a26862d3c5d09ca47d0f5e4c27e2f85fa18c6a74fc893ebdcffd4c60a1b168a2441777ef732aa9b1a1291dcfc5a4cb42afe055e92de96158a58b09e4c326e6127fde3282715aa9d3fcf9ec514140add69316f46076a5a1595c810347ae913d6c122f1c69c6a291081188d0263a221dbd8193db91ef8ee871069fbbe756d4f45d67b944228c3a9f19a480a919178f220f9dd92126649959bf54fc7765c2aecd71fcacb15f715cd09757b1d3690ae4493d5773e69b93a10963d2a3efaa8b5f69ddf21b873c715d286ca311d3335925af1ea3b4d6e734cd7b180ff0846fb86d6f852060be85e28a1a1fd09df145d2893410ba0f83edc62cfc22e3d8feccca602962693aa57f90e69638849ce6c27a41f187d0fa5480a97fa308a5e1135c3f7d8e5983ce0c331376a5d8a939952e7c5287671f6e5b0acfabefcf1210fa60b14cf92e7b0ba9fb858c33b14c3be35d8ba604a3671a5500b4860063b600647f291b11246a7b2ed4b771c93cbfbfb0a147970c11889627a5474fb4237aedad31ebe68a7b5ab21c13b0b575e74aada1cb758099eaa470ce65b499cf7e3c56062031bd873b68c6cb3b9730253106006b84d5244b3957a4965d705e5d419934ff37aec1da85e69b2b27a136c88782159fb1fa2e451a4d16e1d272d5b0ecc2ba7f6303e03428b099377dbfaf8fce4a411e4bd859293b435e0eaa022a2da801ee946c43c40d043cb676ecd4878682f74766d5c41da44dd93c679d28020df7dda97522c0d7e48db956a43a3fe9c384bfe76382b8c2221c132ebcde8100680411b6aba18fb64a84927",
+      "difficulty": "3cef",
+      "total_difficulty": "1b08f",
+      "nrg_consumed": 0,
+      "nrg_limit": 14999958,
+      "size": 1937,
+      "block_timestamp": 1524628858,
+      "num_transactions": 0,
+      "block_time": 8,
+      "nrg_reward": 0,
+      "transaction_id": 0,
+      "transaction_list": "[]"
+    },
+    "source": {
+      "version": "0.8.3.Final",
+      "name": "aionv4server",
+      "server_id": 0,
+      "ts_sec": 0,
+      "gtid": null,
+      "file": "mysql-bin.000022",
+      "pos": 194,
+      "row": 0,
+      "snapshot": true,
+      "thread": null,
+      "db": "aionv4",
+      "table": "block",
+      "query": null
+    },
+    "op": "c",
+    "ts_ms": 1541522769775
+  }
+}
